@@ -1,0 +1,5 @@
+{
+	"failOnStatusCode": "false",
+	"chromeWebSecurity": false,
+ 	"baseUrl": "https://build.harighotra.co.uk/"
+}
