@@ -3,7 +3,7 @@
 describe('Visit shop', function () {
 	it('Vists home page then clicks the link to the shop', function() {
     // https:///build.harighotra.co.uk
-    cy.visit('https://www.harighotra.co.uk')
+    cy.visit('/')
 
     // Click on shop link in header
     cy.contains('Shop').click()
