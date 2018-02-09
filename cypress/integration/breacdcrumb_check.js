@@ -3,8 +3,10 @@
 describe('Breadcrumb Check', function () {
 	it('Vists privacy policy and checks breadcrumb', function() {
     // https://build.harighotra.co.uk/privacy-policy
-    cy.visit('https://build.harighotra.co.uk/privacy-policy')
+    cy.visit('/privacy-policy')
 
+    // verify that the breadcrumb matches the visited page
     cy.get('div.breadcrumb').contains('Privacy Policy')
-	})
+ }) 
+
 })

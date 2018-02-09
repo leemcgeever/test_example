@@ -41,7 +41,7 @@ describe('Basic smoke test', function () {
 	describe('load an incorrect page url to verify that the 404 page is displayed', function() {
 		it('visits footer and opens Privacy Policy Page', function() {
 		    //visit invalid url: https:///build.harighotra.co.uk/notapage
-		    cy.visit('https://www.harighotra.co.uk/notapage', {failOnStatusCode: false})
+		    cy.visit('/notapage', {failOnStatusCode: false})
 
 		    // confirm the 404 page loaded by checking for 404 message on page
 		    cy.get('h1').contains('404')
